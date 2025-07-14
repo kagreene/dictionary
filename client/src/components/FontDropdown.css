@@ -1,0 +1,45 @@
+.font-dropdown-list {
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    background-color: var(--dropdown-bg);
+    border-radius: 0.75rem;
+    z-index: 1000;
+    min-width: 160px;
+}
+
+.dark .font-dropdown-list {
+    box-shadow: 0 2px 8px rgba(164, 69, 237, 0.90);
+}
+
+.font-dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.font-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    background-color: var(--bg-color);
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.font-dropdown-list li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.font-dropdown-list li:hover {
+    background-color: var(--dropdown-bg);
+    color: var(--purple-light);
+}

@@ -1,0 +1,71 @@
+.header-container {
+    display: flex;
+    /*How to determine padding from Figma?*/
+    padding: 2rem 0rem; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 32px;  
+    align-items: center;
+    position: relative;
+    top: 2px; /* Adjusted to align with text */  
+}
+
+.header-controls {
+    display: flex; 
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.font-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.font-dropdown select {
+    background: none; 
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    appearance: none;
+    padding-right: 2rem;
+}
+
+.font-dropdown select:focus {
+    outline: none;
+}
+
+.font-dropdown select:hover {
+    cursor: pointer;
+}
+
+.font-dropdown img {
+    position: absolute; 
+    right: 0.5rem;
+    pointer-events: none;
+    width: 12px;
+    height: 12px;
+}
+
+/*Line between font and theme controls*/
+.divider {
+    width: 1px;
+    height: 24px;
+    background-color: var(--line-color);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
